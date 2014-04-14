@@ -1,0 +1,37 @@
+<template name="tmplt_home">
+ 
+  {{> tmplt_title}}  
+  
+   <div id="div_table">
+	
+    <div id="div_col">  
+      <H2> WELCOME !!! </H2>
+      <img src="/images/pacman.gif">
+      <a href="/pacman"><H1> <div id="div_cambia_color"> -- Play -- </div></H1> </a>
+    </div>
+     
+     
+		<div id="div_col" class="div_rankings">
+      <br>
+      --- Rankings ---<br>
+      _______________<br>
+      {{#each getListaRankings}}
+        {{trunkName name}}: {{points}}<br>
+      {{/each}}
+    </div>
+     
+     
+    <div id="div_col" class="div_chat">  
+      <div id="div_chat">
+        {{> chatworks}}
+      </div> 
+    </div>
+  </div>
+  
+  <div id="div_footer"></div>
+
+  
+  
+</template>
+    
+    

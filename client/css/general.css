@@ -1,0 +1,24 @@
+* {
+	/* Evitamos que el texto, imaganes, etc se puedan seleccionar (que se quede seleccionado en azul)*/
+	user-select: none;
+   
+}
+
+A:link, A:visited, A:hover, A:active { 
+    text-decoration: none; 
+    color: red; 
+}
+
+body {
+  background-color: black; 
+  color: white;
+  font-family: 'pixelFont', Fallback, sans-serif;
+}
+
+#div_links {
+    color: red;
+    padding-left: 10px;
+}
+
+
+

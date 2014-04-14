@@ -1,0 +1,28 @@
+<template name="tmplt_players">
+
+    <div id="div_lista_players">
+        <center>PLAYERS</center>
+        ___________________<br>
+        {{#each getListaPlayers}}
+          <p style="color:{{getColor number}}">Player {{number}}: {{name}}</p>
+        {{/each}}
+    </div>
+    
+    <br><br>
+  
+    {{#if currentUser}}
+        
+        <div id="div_cambia_color">PRESS INTRO TO PLAY</div>
+        <br>
+        <ul>
+            <li>Ghosts eat Pacos.</li>
+            <li>Pacos eat cherries.</li>
+        </ul>
+    
+    {{else}}
+    
+        <div id="div_cambia_color">LOG-IN TO PLAY</div>
+        
+    {{/if}}
+  
+</template>

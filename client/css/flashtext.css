@@ -1,0 +1,32 @@
+#div_cambia_color {
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: animacionTexto;
+    -webkit-animation-name: animacionTexto;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes animacionTexto {
+    from {
+        color: white;   
+    }
+    50% {
+        color: red;
+    }
+    to {
+        color: white;
+    }
+}
+
+@-webkit-keyframes animacionTexto {
+    from {
+        color: white;   
+    }
+    50% {
+        color: red;
+    }
+    to {
+        color: white;
+    }
+}

@@ -1,0 +1,39 @@
+h1 {
+  color: red;
+}
+
+#div_tablero {
+  background-image:url( '/images/Tablero.gif' );
+  background-size:cover;
+
+  position: relative;
+  
+  width: 510px;
+  height: 500px;
+}
+
+
+#div_cereza {
+  background-image:url( '/images/Cereza.gif' );
+  position: absolute;
+  
+  width: 25px;
+  height: 26px;
+  
+}
+
+#div_player_0, #div_player_1, #div_player_2, #div_player_3, #div_player_4, #div_player_5 {
+  
+  position: absolute;
+
+  background-size:cover; /* Ajustamos la imagen al tamaño del div*/
+  
+  width: 25px;
+  height: 25px;
+  
+
+  transition-duration: 50ms;
+  transition-property: top, left;
+
+}
+
